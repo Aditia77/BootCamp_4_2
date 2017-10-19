@@ -1,0 +1,16 @@
+<h1>Update Course</h1>
+
+<a>ID <input type="text" class="form-control" [(ngModel)]="course.Id"></a>
+<a>Course Name <input type="text" class="form-control" [(ngModel)]="course.Name"></a>
+
+<button type="submit" (click)="course.add()"> Submit </button>
+<table>
+    <div *ngFor="let c of course.courselist">
+
+        <tr>
+            <td>id: {{ c.Id }}</td>
+            <td>Name: {{ c.Name }}</td>
+        </tr>
+
+    </div>
+</table>
